@@ -5,6 +5,7 @@ import { TopBar } from './TopBar'
 import { CertificateAlertBanner } from '../ui/CertificateIndicator'
 import { ToastProvider } from '../ui/Toast'
 import { ContactModal } from '../ui/ContactModal'
+import { PoweredBy } from '../ui/PoweredBy'
 import { LayoutDashboard, FileText, Plus, Users, Rss } from 'lucide-react'
 import { cn } from '@/utils/cn'
 
@@ -41,6 +42,7 @@ export default function MainLayout() {
           <ContactModal />
           <main className="flex-1 p-4 sm:p-6 pb-24 lg:pb-6">
             <Outlet />
+            <PoweredBy />
           </main>
         </div>
 
